@@ -7,6 +7,7 @@ import java.util.regex.Pattern;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
 class Recitation0Test extends OutputTest {
 
     @BeforeEach
@@ -29,6 +30,6 @@ class Recitation0Test extends OutputTest {
         assertTrue(Pattern.compile(expected.replaceAll("\\s",""))
                         .matcher(actual.replaceAll("\\s","")).find(),
                 message);
-
+        System.out.println("Hello World");
     }
 }
